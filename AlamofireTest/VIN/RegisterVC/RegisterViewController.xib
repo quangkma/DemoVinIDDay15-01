@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="AlamofireTest" customModuleProvider="target">
+            <connections>
+                <outlet property="passwordTextField" destination="tJk-L3-lQw" id="DT6-ci-zfd"/>
+                <outlet property="phoneTextField" destination="4Hd-mQ-jz9" id="6ZH-PL-SxL"/>
+                <outlet property="pwConfirmTf" destination="DA1-xF-Oxq" id="jv9-BM-Piy"/>
+                <outlet property="view" destination="wcg-Mh-9fV" id="J6V-NL-e0j"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="wcg-Mh-9fV">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rmd-P9-8gs">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o41-pl-5Yy">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="743"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="pB9-JJ-qpd">
+                                    <rect key="frame" x="20" y="30" width="374" height="693"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MQL-Mn-t1n">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="77"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Hpo-fs-aWj">
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="77"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pJu-D0-xCQ">
+                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="28"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Họ và tên " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8kq-jG-bYr">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="28"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="textDefault" value="YES"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Họ và tên " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0YD-0n-BfZ" customClass="ValidatorTextField" customModule="AlamofireTest" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="33" width="374" height="44"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="44" id="tW5-wd-dTM"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="enableValidate" value="YES"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </textField>
+                                                        <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="sB0-jW-uhP">
+                                                            <rect key="frame" x="0.0" y="77" width="374" height="0.0"/>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="Hpo-fs-aWj" firstAttribute="leading" secondItem="MQL-Mn-t1n" secondAttribute="leading" id="DqW-qE-wGm"/>
+                                                <constraint firstItem="Hpo-fs-aWj" firstAttribute="top" secondItem="MQL-Mn-t1n" secondAttribute="top" id="NPV-bE-eIV"/>
+                                                <constraint firstAttribute="trailing" secondItem="Hpo-fs-aWj" secondAttribute="trailing" id="QB0-Me-lag"/>
+                                                <constraint firstAttribute="bottom" secondItem="Hpo-fs-aWj" secondAttribute="bottom" id="hWR-Eb-k8S"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IAU-nE-KLd">
+                                            <rect key="frame" x="0.0" y="97" width="374" height="77"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="G45-s6-OaM">
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="77"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="PF0-19-bYG">
+                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="28"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tài Khoản" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R0A-du-N51">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="28"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="textDefault" value="YES"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tên đăng nhập " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G9Z-5r-6lY" customClass="ValidatorTextField" customModule="AlamofireTest" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="33" width="374" height="44"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="44" id="1Pn-j8-lgw"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="enableValidate" value="YES"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </textField>
+                                                        <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="zD6-fl-90t">
+                                                            <rect key="frame" x="0.0" y="77" width="374" height="0.0"/>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="G45-s6-OaM" firstAttribute="top" secondItem="IAU-nE-KLd" secondAttribute="top" id="NEx-tY-f6q"/>
+                                                <constraint firstItem="G45-s6-OaM" firstAttribute="leading" secondItem="IAU-nE-KLd" secondAttribute="leading" id="Unh-g7-rgh"/>
+                                                <constraint firstAttribute="trailing" secondItem="G45-s6-OaM" secondAttribute="trailing" id="bFr-4s-FYZ"/>
+                                                <constraint firstAttribute="bottom" secondItem="G45-s6-OaM" secondAttribute="bottom" id="iE9-Cb-zTu"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fIb-jT-3fP">
+                                            <rect key="frame" x="0.0" y="194" width="374" height="77"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="tVr-df-w8e">
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="77"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ZsF-mq-94t">
+                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="28"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wkl-en-ECS">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="28"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="textDefault" value="YES"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uy5-cd-V48" customClass="ValidatorTextField" customModule="AlamofireTest" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="33" width="374" height="44"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="44" id="3Do-bN-zM8"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="enableValidate" value="YES"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </textField>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="tVr-df-w8e" firstAttribute="top" secondItem="fIb-jT-3fP" secondAttribute="top" id="KAB-S7-gBJ"/>
+                                                <constraint firstItem="tVr-df-w8e" firstAttribute="leading" secondItem="fIb-jT-3fP" secondAttribute="leading" id="Saw-1C-tr0"/>
+                                                <constraint firstAttribute="trailing" secondItem="tVr-df-w8e" secondAttribute="trailing" id="Xh7-eH-cTy"/>
+                                                <constraint firstAttribute="bottom" secondItem="tVr-df-w8e" secondAttribute="bottom" id="ZXz-1i-IiZ"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wiT-6l-oVD">
+                                            <rect key="frame" x="0.0" y="291" width="374" height="77"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="tiL-08-Oav">
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="77"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="syn-BY-VJk">
+                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="28"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Số điện thoại " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02h-5I-iga">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="28"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="textDefault" value="YES"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Số điện thoại " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Hd-mQ-jz9" customClass="ValidatorTextField" customModule="AlamofireTest" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="33" width="374" height="44"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="44" id="3FC-y2-f7t"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="enableValidate" value="YES"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </textField>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="tiL-08-Oav" firstAttribute="top" secondItem="wiT-6l-oVD" secondAttribute="top" id="N5X-KQ-0rK"/>
+                                                <constraint firstAttribute="bottom" secondItem="tiL-08-Oav" secondAttribute="bottom" id="YgB-Ae-SyB"/>
+                                                <constraint firstAttribute="trailing" secondItem="tiL-08-Oav" secondAttribute="trailing" id="n2C-il-Ko3"/>
+                                                <constraint firstItem="tiL-08-Oav" firstAttribute="leading" secondItem="wiT-6l-oVD" secondAttribute="leading" id="ysb-1M-M9o"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5eP-c2-P9E">
+                                            <rect key="frame" x="0.0" y="388" width="374" height="77"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="13R-f7-98K">
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="77"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="SFn-Cn-a0b">
+                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="28"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mật Khẩu " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1g-iv-WpJ">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="28"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="textDefault" value="YES"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mật khẩu " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tJk-L3-lQw" customClass="ValidatorTextField" customModule="AlamofireTest" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="33" width="374" height="44"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="44" id="816-1y-3UW"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits" textContentType="password"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="enableValidate" value="YES"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </textField>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="13R-f7-98K" firstAttribute="leading" secondItem="5eP-c2-P9E" secondAttribute="leading" id="81P-yc-DeB"/>
+                                                <constraint firstItem="13R-f7-98K" firstAttribute="top" secondItem="5eP-c2-P9E" secondAttribute="top" id="H6m-su-u4x"/>
+                                                <constraint firstAttribute="trailing" secondItem="13R-f7-98K" secondAttribute="trailing" id="MF5-Vb-bsm"/>
+                                                <constraint firstAttribute="bottom" secondItem="13R-f7-98K" secondAttribute="bottom" id="z8l-df-nKQ"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hy6-0W-W7Q">
+                                            <rect key="frame" x="0.0" y="485" width="374" height="77"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="yEe-QX-UoL">
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="77"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Hty-V0-fhJ">
+                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="28"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nhập lại mật khẩu " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrn-HY-vkG">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="28"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="textDefault" value="YES"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mật khẩu " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DA1-xF-Oxq" customClass="ValidatorTextField" customModule="AlamofireTest" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="33" width="374" height="44"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="44" id="Uxp-oG-Bd5"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits" textContentType="password"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="enableValidate" value="YES"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </textField>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="yEe-QX-UoL" secondAttribute="trailing" id="JAg-Pa-Ohw"/>
+                                                <constraint firstItem="yEe-QX-UoL" firstAttribute="leading" secondItem="hy6-0W-W7Q" secondAttribute="leading" id="QUE-hw-Whj"/>
+                                                <constraint firstItem="yEe-QX-UoL" firstAttribute="top" secondItem="hy6-0W-W7Q" secondAttribute="top" id="fZa-gz-XKM"/>
+                                                <constraint firstAttribute="bottom" secondItem="yEe-QX-UoL" secondAttribute="bottom" id="ufZ-Jd-WV4"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bu8-Pv-Ojw">
+                                            <rect key="frame" x="0.0" y="582" width="374" height="111"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="lgO-fX-TDk">
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="111"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cC5-Wq-Bv0" userLabel="Đăng kí">
+                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="48"/>
+                                                            <color key="backgroundColor" red="0.074509803920000006" green="0.29411764709999999" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="48" id="A4T-fU-WEb"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <state key="normal" title="Đăng kí ">
+                                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </state>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="5"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="primary" value="YES"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <action selector="onRegister:" destination="-1" eventType="touchUpInside" id="hMw-Wq-bEa"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xos-5w-2BV" userLabel="Đăng nhập">
+                                                            <rect key="frame" x="0.0" y="63" width="374" height="48"/>
+                                                            <color key="backgroundColor" red="0.092438066319999998" green="0.45480156300000002" blue="0.79683823570000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="48" id="LSa-zr-WHz"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <state key="normal" title="Đăng nhập">
+                                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </state>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="5"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="primary" value="YES"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <action selector="backLogin:" destination="-1" eventType="touchUpInside" id="0SQ-sg-ypW"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="lgO-fX-TDk" firstAttribute="leading" secondItem="bu8-Pv-Ojw" secondAttribute="leading" id="2aR-bv-hbk"/>
+                                                <constraint firstAttribute="trailing" secondItem="lgO-fX-TDk" secondAttribute="trailing" id="7XH-8i-Gb9"/>
+                                                <constraint firstAttribute="bottom" secondItem="lgO-fX-TDk" secondAttribute="bottom" id="DRw-f3-1QE"/>
+                                                <constraint firstItem="lgO-fX-TDk" firstAttribute="top" secondItem="bu8-Pv-Ojw" secondAttribute="top" id="zqE-hc-4PC"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="pB9-JJ-qpd" firstAttribute="top" secondItem="o41-pl-5Yy" secondAttribute="top" constant="30" id="Eb2-6k-q3x"/>
+                                <constraint firstItem="pB9-JJ-qpd" firstAttribute="leading" secondItem="o41-pl-5Yy" secondAttribute="leading" constant="20" id="Nl5-th-T8A"/>
+                                <constraint firstAttribute="trailing" secondItem="pB9-JJ-qpd" secondAttribute="trailing" constant="20" id="PSy-Uf-Wu2"/>
+                                <constraint firstAttribute="bottom" secondItem="pB9-JJ-qpd" secondAttribute="bottom" constant="20" id="QGT-vK-lpB"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="o41-pl-5Yy" firstAttribute="top" secondItem="rmd-P9-8gs" secondAttribute="top" id="01s-XJ-VcJ"/>
+                        <constraint firstAttribute="bottom" secondItem="o41-pl-5Yy" secondAttribute="bottom" id="c0L-wn-yTG"/>
+                        <constraint firstAttribute="trailing" secondItem="o41-pl-5Yy" secondAttribute="trailing" id="paP-eZ-bpq"/>
+                        <constraint firstItem="o41-pl-5Yy" firstAttribute="leading" secondItem="rmd-P9-8gs" secondAttribute="leading" id="seV-Ky-Taf"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="rmd-P9-8gs" firstAttribute="leading" secondItem="wcg-Mh-9fV" secondAttribute="leading" id="126-jL-7PE"/>
+                <constraint firstItem="o41-pl-5Yy" firstAttribute="width" secondItem="wcg-Mh-9fV" secondAttribute="width" id="QfF-CX-Xjn"/>
+                <constraint firstItem="rmd-P9-8gs" firstAttribute="top" secondItem="bFK-y2-mNi" secondAttribute="top" id="kQm-JF-iLy"/>
+                <constraint firstItem="bFK-y2-mNi" firstAttribute="bottom" secondItem="rmd-P9-8gs" secondAttribute="bottom" id="r90-yy-1g4"/>
+                <constraint firstAttribute="trailing" secondItem="rmd-P9-8gs" secondAttribute="trailing" id="yN6-QV-4GH"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="bFK-y2-mNi"/>
+            <point key="canvasLocation" x="139" y="42"/>
+        </view>
+    </objects>
+</document>
